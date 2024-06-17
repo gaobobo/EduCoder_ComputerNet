@@ -6,18 +6,16 @@
 DownloadSite=${1:-Gitee}
 readonly DownloadSite
 
-LevelCode='dhcp-1'
+LevelCode='dhcp-2'
 readonly LevelCode
 
 mkdir -p /tmp/${LevelCode}
 
 case $DownloadSite in
     Gitee)
-        curl -o /tmp/${LevelCode}/fifth.gns3 https://gitee.com/coconut_floss/EduCoder_ComputerNet/raw/ExWeek/Source/${LevelCode}/fifth.gns3
         curl -o /tmp/${LevelCode}/SW1_configs_i2_startup-config.cfg https://gitee.com/coconut_floss/EduCoder_ComputerNet/raw/ExWeek/Source/${LevelCode}/SW1_configs_i2_startup-config.cfg
         ;;
     Github)
-        curl -o /tmp/${LevelCode}/fifth.gns3 https://raw.githubusercontent.com/gaobobo/EduCoder_ComputerNet/ExWeek/Source/${LevelCode}/fifth.gns3
         curl -o /tmp/${LevelCode}/SW1_configs_i2_startup-config.cfg https://raw.githubusercontent.com/gaobobo/EduCoder_ComputerNet/ExWeek/Source/${LevelCode}/SW1_configs_i2_startup-config.cfg
         ;;
     *)
@@ -27,7 +25,6 @@ case $DownloadSite in
         ;;
 esac
 
-mv -f /tmp/${LevelCode}/fifth.gns3 /tmp/fifth/fifth.gns3
 mv -f /tmp/${LevelCode}/SW1_configs_i2_startup-config.cfg /tmp/fifth/SW1_configs_i2_startup-config.cfg
 
 return 0
