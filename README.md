@@ -9,7 +9,7 @@ if [ $? -ne 0 ]; then
 fi
 clear
 # 使用Gitee站点镜像：
-curl -o /tmp/start.sh https://gitee.com/coconut_floss/EduCoder_IntroToDb/raw/main/start.sh
+curl -o /tmp/start.sh https://gitee.com/coconut_floss/EduCoder_ComputerNet/raw/main/start.sh
 chmod +x /tmp/start.sh
 /tmp/start.sh {LevelCode} Gitee
 ```
