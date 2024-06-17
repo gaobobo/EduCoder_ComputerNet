@@ -1,1 +1,2 @@
-# 该Branch仅供实验周使用。在实验周后该Branch将以Tag的形式存在。
+# ComputerNet
+Computer Network Course's Educoder excrises shell script. /计算机网络基础的头歌过关脚本。
