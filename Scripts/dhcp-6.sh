@@ -13,12 +13,12 @@ mkdir -p /tmp/${LevelCode}
 
 case $DownloadSite in
     Gitee)
-        curl -o /tmp/${LevelCode}/PC1_startup.vpc https://gitee.com/coconut_floss/EduCoder_ComputerNet/raw/ExWeek/Source/${LevelCode}/PC1_startup.vpc
-        curl -o /tmp/${LevelCode}/PC2_startup.vpc https://gitee.com/coconut_floss/EduCoder_ComputerNet/raw/ExWeek/Source/${LevelCode}/PC2_startup.vpc
+        curl -o /tmp/${LevelCode}/PC1_startup.vpc https://gitee.com/coconut_floss/EduCoder_ComputerNet/raw/ExWeek/Resource/${LevelCode}/PC1_startup.vpc
+        curl -o /tmp/${LevelCode}/PC2_startup.vpc https://gitee.com/coconut_floss/EduCoder_ComputerNet/raw/ExWeek/Resource/${LevelCode}/PC2_startup.vpc
         ;;
     Github)
-        curl -o /tmp/${LevelCode}/PC1_startup.vpc https://raw.githubusercontent.com/gaobobo/EduCoder_ComputerNet/ExWeek/Source/${LevelCode}/PC1_startup.vpc
-        curl -o /tmp/${LevelCode}/PC2_startup.vpc https://raw.githubusercontent.com/gaobobo/EduCoder_ComputerNet/ExWeek/Source/${LevelCode}/PC2_startup.vpc
+        curl -o /tmp/${LevelCode}/PC1_startup.vpc https://raw.githubusercontent.com/gaobobo/EduCoder_ComputerNet/ExWeek/Resource/${LevelCode}/PC1_startup.vpc
+        curl -o /tmp/${LevelCode}/PC2_startup.vpc https://raw.githubusercontent.com/gaobobo/EduCoder_ComputerNet/ExWeek/Resource/${LevelCode}/PC2_startup.vpc
         ;;
     *)
         echo "Unknown download site: $DownloadSite"

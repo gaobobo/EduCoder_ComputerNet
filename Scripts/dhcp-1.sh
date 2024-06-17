@@ -13,12 +13,12 @@ mkdir -p /tmp/${LevelCode}
 
 case $DownloadSite in
     Gitee)
-        curl -o /tmp/${LevelCode}/fifth.gns3 https://gitee.com/coconut_floss/EduCoder_ComputerNet/raw/ExWeek/Source/${LevelCode}/fifth.gns3
-        curl -o /tmp/${LevelCode}/SW1_configs_i2_startup-config.cfg https://gitee.com/coconut_floss/EduCoder_ComputerNet/raw/ExWeek/Source/${LevelCode}/SW1_configs_i2_startup-config.cfg
+        curl -o /tmp/${LevelCode}/fifth.gns3 https://gitee.com/coconut_floss/EduCoder_ComputerNet/raw/ExWeek/Resource/${LevelCode}/fifth.gns3
+        curl -o /tmp/${LevelCode}/SW1_configs_i2_startup-config.cfg https://gitee.com/coconut_floss/EduCoder_ComputerNet/raw/ExWeek/Resource/${LevelCode}/SW1_configs_i2_startup-config.cfg
         ;;
     Github)
-        curl -o /tmp/${LevelCode}/fifth.gns3 https://raw.githubusercontent.com/gaobobo/EduCoder_ComputerNet/ExWeek/Source/${LevelCode}/fifth.gns3
-        curl -o /tmp/${LevelCode}/SW1_configs_i2_startup-config.cfg https://raw.githubusercontent.com/gaobobo/EduCoder_ComputerNet/ExWeek/Source/${LevelCode}/SW1_configs_i2_startup-config.cfg
+        curl -o /tmp/${LevelCode}/fifth.gns3 https://raw.githubusercontent.com/gaobobo/EduCoder_ComputerNet/ExWeek/Resource/${LevelCode}/fifth.gns3
+        curl -o /tmp/${LevelCode}/SW1_configs_i2_startup-config.cfg https://raw.githubusercontent.com/gaobobo/EduCoder_ComputerNet/ExWeek/Resource/${LevelCode}/SW1_configs_i2_startup-config.cfg
         ;;
     *)
         echo "Unknown download site: $DownloadSite"

@@ -13,10 +13,10 @@ mkdir -p /tmp/${LevelCode}
 
 case $DownloadSite in
     Gitee)
-        curl -o /tmp/${LevelCode}/R1_configs_i1_startup-config.cfg https://gitee.com/coconut_floss/EduCoder_ComputerNet/raw/ExWeek/Source/${LevelCode}/R1_configs_i1_startup-config.cfg
+        curl -o /tmp/${LevelCode}/R1_configs_i1_startup-config.cfg https://gitee.com/coconut_floss/EduCoder_ComputerNet/raw/ExWeek/Resource/${LevelCode}/R1_configs_i1_startup-config.cfg
         ;;
     Github)
-        curl -o /tmp/${LevelCode}/R1_configs_i1_startup-config.cfg https://raw.githubusercontent.com/gaobobo/EduCoder_ComputerNet/ExWeek/Source/${LevelCode}/R1_configs_i1_startup-config.cfg
+        curl -o /tmp/${LevelCode}/R1_configs_i1_startup-config.cfg https://raw.githubusercontent.com/gaobobo/EduCoder_ComputerNet/ExWeek/Resource/${LevelCode}/R1_configs_i1_startup-config.cfg
         ;;
     *)
         echo "Unknown download site: $DownloadSite"
