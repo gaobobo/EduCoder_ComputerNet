@@ -29,6 +29,6 @@ case $DownloadSite in
 esac
 
 mv -f /tmp/${LevelCode}/PC1_startup.vpc /tmp/fifth/PC1_startup.vpc
-mv -f /tmp/${LevelCode}/PC1_startup.vpc /tmp/fifth/PC2_startup.vpc
+mv -f /tmp/${LevelCode}/PC2_startup.vpc /tmp/fifth/PC2_startup.vpc
 
 return 0
