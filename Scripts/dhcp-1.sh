@@ -10,6 +10,7 @@ LevelCode='dhcp-1'
 readonly LevelCode
 
 mkdir -p /tmp/${LevelCode}
+mkdir -p /tmp/fifth
 
 case $DownloadSite in
     Gitee)
